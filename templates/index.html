@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>University Student Support Chatbot</title>
 
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main App Container */
+.app-container {
+  width: 900px;
+  max-width: 95%;
+  height: 90vh;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  overflow: hidden;
+}
+
+/* LEFT INFO PANEL */
+.info-panel {
+  background: linear-gradient(180deg, #1e3c72, #16315d);
+  color: white;
+  padding: 40px;
+}
+
+.info-panel h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.info-panel p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.info-panel ul {
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+.info-panel li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* RIGHT CHAT PANEL */
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  background: #f4f6f8;
+  height: 100%;
+  min-height: 0; /* 🔥 REQUIRED FOR SCROLLING */
+}
+
+.chat-header {
+  background: #ffffff;
+  padding: 18px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1e3c72;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* Messages */
+.message {
+  max-width: 75%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  line-height: 1.5;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #1e3c72;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.bot {
+  background: #e5e7eb;
+  color: #111;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+/* INPUT AREA */
+.chat-input {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background: #ffffff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 22px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-input button:hover {
+  background: #16315d;
+}
+
+/* Scrollbar styling */
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+  .info-panel {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app-container">
+
+  <!-- LEFT INFO -->
+  <div class="info-panel">
+    <h1>🎓 University Student Support Chatbot</h1>
+
+    <p>
+      This AI-powered chatbot helps students quickly find accurate answers
+      to common university-related questions using official academic information.
+    </p>
+
+    <p><strong>You can ask about:</strong></p>
+    <ul>
+      <li>📚 Attendance and grading policies</li>
+      <li>🎓 Graduation requirements</li>
+      <li>📝 Course registration</li>
+      <li>🏫 Academic support services</li>
+      <li>⏰ Office hours and administration</li>
+    </ul>
+
+    <p style="margin-top: 30px; font-size: 13px; opacity: 0.9;">
+      ⚠️ Answers are generated strictly from approved university information.
+    </p>
+  </div>
+
+  <!-- RIGHT CHAT -->
+  <div class="chat-panel">
+    <div class="chat-header">Student FAQ Chat</div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="chat-input">
+      <input id="userInput" placeholder="Type your question here..." autocomplete="off" />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const input = document.getElementById("userInput");
+const chatBox = document.getElementById("chatBox");
+const sendBtn = document.getElementById("sendBtn");
+
+sendBtn.addEventListener("click", sendMessage);
+
+input.addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
+async function sendMessage() {
+  const question = input.value.trim();
+  if (!question) return;
+
+  // User message
+  const userMsg = document.createElement("div");
+  userMsg.className = "message user";
+  userMsg.textContent = question;
+  chatBox.appendChild(userMsg);
+
+  input.value = "";
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  try {
+    const res = await fetch("/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question })
+    });
+
+    const data = await res.json();
+
+    const botMsg = document.createElement("div");
+    botMsg.className = "message bot";
+    botMsg.textContent = data.answer || "No response available.";
+    chatBox.appendChild(botMsg);
+
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+  } catch {
+    const errMsg = document.createElement("div");
+    errMsg.className = "message bot";
+    errMsg.textContent = "Server error. Please try again.";
+    chatBox.appendChild(errMsg);
+  }
+}
+</script>
+
+</body>
+</html>
