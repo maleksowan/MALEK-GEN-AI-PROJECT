@@ -1,0 +1,45 @@
+University Student Information Knowledge Base
+
+University Name:
+Future Tech University (FTU)
+
+General Information:
+Future Tech University (FTU) is a private university that offers undergraduate programs in Computer Science, Information Technology, Engineering, and Business. The academic year is divided into two main semesters: Fall and Spring, with an optional Summer semester.
+
+Admissions:
+Students can apply online through the official university admission portal. Required documents include a high school certificate, a national ID, and a personal photo. Admission decisions are usually announced within two weeks after submission.
+
+Registration:
+Course registration is completed online through the student portal during the announced registration period. Students are advised to complete registration on time, as late registration may result in additional fees.
+
+Credit Hours:
+Most undergraduate programs require the completion of 132 credit hours to graduate. Each course is typically worth 3 credit hours unless stated otherwise in the study plan.
+
+Examinations:
+Each course includes at least one midterm exam and one final exam. The final exam usually represents 40% of the total course grade. Students must bring their university ID to all examinations.
+
+Grading System:
+Grades are calculated based on assignments, quizzes, midterm exams, and final exams. The grading scale ranges from A (Excellent) to F (Fail). A minimum grade of D is required to pass a course.
+
+Attendance Policy:
+Students must attend at least 75% of lectures. If a student’s attendance falls below this limit, the student may be denied entry to the final exam.
+
+IT Services:
+All students receive a university email account and access to the eLearning system. Password or technical issues can be resolved by contacting the IT Helpdesk.
+
+eLearning System:
+The eLearning platform is used to upload lecture materials, assignments, and important announcements. Students are responsible for checking the system regularly.
+
+Academic Support:
+The university provides academic advising and tutoring services. Students can book appointments through the Student Services Office.
+
+Graduation Requirements:
+To graduate, students must complete all required courses, maintain a minimum cumulative GPA of 2.0, and clear all financial obligations.
+
+Contact Information:
+General Email: info@ftu.edu  
+Phone: +962-6-1234567  
+IT Helpdesk Email: it-support@ftu.edu  
+
+Office Hours:
+Administrative offices are open from Sunday to Thursday, from 9:00 AM to 4:00 PM.

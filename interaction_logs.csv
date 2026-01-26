@@ -1,0 +1,82 @@
+timestamp,user_question,ai_answer
+2026-01-22T18:51:39.070404,what is university name ?,The university name is Future Tech University (FTU).
+2026-01-22T18:55:57.836964,What is the attendance policy?,"Students must attend at least 75% of lectures. If attendance falls below this limit, the student may be denied entry to the final exam."
+2026-01-22T18:56:24.973436,Do I need to attend all lectures?,"Students must attend at least 75% of lectures. If attendance falls below this limit, the student may be denied entry to the final exam."
+2026-01-22T19:15:31.789839,How many credit hours are required?,Most undergraduate programs require the completion of 132 credit hours.
+2026-01-22T19:16:05.932297,How many hours do I need to graduate?,"To graduate, students must complete 132 credit hours."
+2026-01-22T20:37:21.277983,How much does the final count?,The final exam usually represents 40% of the total course grade.
+2026-01-22T20:43:51.989816,give me contact information,"The contact information for Future Tech University (FTU) is as follows:
+
+Email: info@ftu.edu  
+Phone: +962-6-1234567  
+IT Helpdesk Email: it-support@ftu.edu  
+
+Administrative offices are open from Sunday to Thursday, 9:00 AM to 4:00 PM."
+
+2026-01-22T22:25:24.591148,can you give me contact info ?,"Sure! Here is the contact information for Future Tech University:
+
+Email: info@ftu.edu  
+Phone: +962-6-1234567  
+IT Helpdesk Email: it-support@ftu.edu  
+
+Administrative offices are open from Sunday to Thursday, 9:00 AM to 4:00 PM."
+
+2026-01-22T22:55:03.278905,are you sure,I can only answer questions based on the provided university information.
+2026-01-22T22:57:21.834410,what is gradute requitrments,"To graduate, students must complete all required courses, maintain a minimum GPA of 2.0, and clear all financial obligations."
+2026-01-22T23:01:31.291104,hi,I can only answer questions based on the provided university information.
+2026-01-22T23:07:31.613140,hi,Hello! How can I assist you with your university-related questions today?
+2026-01-22T23:08:27.094534,what is elearning ?,I can only answer questions based on the provided university information.
+2026-01-22T23:08:46.190468,tell me about Graduation requirements,"To graduate from Future Tech University (FTU), students must complete all required courses, maintain a minimum cumulative GPA of 2.0, and clear all financial obligations."
+2026-01-22T23:10:05.712348,i forget my elearning password,I can only answer questions based on the provided university information.
+2026-01-22T23:13:24.047038,tell me about elearning,"The eLearning platform at Future Tech University (FTU) is used to upload lecture materials, assignments, and important announcements. Students are responsible for checking the system regularly to stay updated on their courses. If you have any technical issues or password problems, you can resolve them by contacting the IT Helpdesk."
+2026-01-22T23:54:02.262592,what about grading,"The grading system at Future Tech University (FTU) is based on assignments, quizzes, midterm exams, and final exams. The grading scale ranges from A (Excellent) to F (Fail). A minimum grade of D is required to pass a course. The final exam usually represents 40% of the total course grade."
+2026-01-22T23:54:34.759576,then what is office hours,"Administrative offices at Future Tech University (FTU) are open from Sunday to Thursday, from 9:00 AM to 4:00 PM. How else can I assist you?"
+2026-01-22T23:54:59.520454,"great , can i ask about the  📝 Course registration procedures","Hello! Of course, I can help you with that. 
+
+Course registration at Future Tech University (FTU) is completed online through the student portal during the announced registration period. It's important for students to complete their registration on time, as late registration may result in additional fees. 
+
+If you have any more questions, feel free to ask!"
+2026-01-22T23:55:30.592200,does the university office hours are avilable at 5pm,"The administrative offices are open from Sunday to Thursday, from 9:00 AM to 4:00 PM. Therefore, they are not available at 5 PM. How else can I assist you?"
+2026-01-23T00:00:17.096162,hello,Hello! How can I assist you with your university-related questions today?
+2026-01-23T00:00:32.324395,what is 🏫 Academic support services,I can only answer questions based on the provided university information.
+2026-01-23T15:20:46.405163,hi,Hello! How can I assist you with your university-related questions today?
+2026-01-23T16:48:53.640846,hi,Hello! How can I assist you with your university-related questions today?
+2026-01-23T16:49:09.392554,tell me about  Attendance and grading policies,"At Future Tech University (FTU), the attendance policy requires students to attend at least 75% of lectures. If a student’s attendance falls below this limit, they may be denied entry to the final exam.
+
+Regarding the grading system, grades are calculated based on assignments, quizzes, midterm exams, and final exams. The grading scale ranges from A (Excellent) to F (Fail), and a minimum grade of D is required to pass a course. Each course includes at least one midterm exam and one final exam, with the final exam usually representing 40% of the total course grade."
+2026-01-26T00:16:26.250805,hi,Hello! How can I assist you with your university-related questions today?
+2026-01-26T00:16:42.153448,can i ask about the grading policies,"Hello! How can I help you with your university-related questions? 
+
+Regarding grading policies, grades are calculated based on assignments, quizzes, midterm exams, and final exams. The grading scale ranges from A (Excellent) to F (Fail), and a minimum grade of D is required to pass a course. If you have any more specific questions, feel free to ask!"
+2026-01-26T00:17:04.746848,more explain about that,I can only answer questions based on the provided university information.
+2026-01-26T00:17:22.176624,what is grade D,"A grade of D is the minimum passing grade in the grading system at Future Tech University (FTU). It indicates that a student has met the basic requirements of the course, but it is not considered a strong performance."
+2026-01-26T00:17:54.780535,and tell me about grading policies,"The grading system at Future Tech University (FTU) is based on assignments, quizzes, midterm exams, and final exams. The grading scale ranges from A (Excellent) to F (Fail). A minimum grade of D is required to pass a course. If you have any more questions, feel free to ask!"
+2026-01-26T00:18:26.195963,and attendance ?,"Students must attend at least 75% of lectures. If a student’s attendance falls below this limit, the student may be denied entry to the final exam. How else can I assist you with university-related questions?"
+2026-01-26T00:19:17.178265,what about graduation requirments ?,"To graduate from Future Tech University (FTU), students must complete all required courses, maintain a minimum cumulative GPA of 2.0, and clear all financial obligations."
+2026-01-26T00:19:33.663635,what is required to graduate ?,"To graduate from Future Tech University (FTU), students must complete all required courses, maintain a minimum cumulative GPA of 2.0, and clear all financial obligations."
+2026-01-26T00:19:47.854323,meaning of GPA,I can only answer questions based on the provided university information.
+2026-01-26T13:26:21.223855,hello,Hello! How can I assist you with your university-related questions today?
+2026-01-26T13:26:43.308821,tell me about grading policies,"The grading system at Future Tech University (FTU) is based on assignments, quizzes, midterm exams, and final exams. The grading scale ranges from A (Excellent) to F (Fail). To pass a course, students must achieve a minimum grade of D."
+2026-01-26T13:27:00.410747,what is office hours ?,"Administrative offices at Future Tech University (FTU) are open from Sunday to Thursday, from 9:00 AM to 4:00 PM. How else can I assist you?"
+2026-01-26T13:27:32.179178,how are you,Hello! I'm here to help you with any university-related questions you may have. How can I assist you today?
+2026-01-26T13:27:52.634798,price of TV screen,I can only answer questions based on the provided university information.
+2026-01-26T14:00:05.352710,HI,Hello! How can I assist you with your university-related questions today?
+2026-01-26T14:00:35.237927,"Course registration procedures , TELL ME  about that","Course registration is completed online through the student portal during the announced registration period. Students are advised to complete registration on time, as late registration may result in additional fees."
+2026-01-26T14:01:00.436713,"great , what about Attendance","The attendance policy at Future Tech University (FTU) requires students to attend at least 75% of lectures. If a student’s attendance falls below this limit, they may be denied entry to the final exam. If you have any more questions, feel free to ask!"
+2026-01-26T14:03:24.738896,hi,Hello! How can I assist you with your university-related questions today?
+2026-01-26T14:03:25.018797,hi,Hello! How can I assist you with your university-related questions today?
+2026-01-26T14:03:29.940542,h,Hello! How can I assist you with your university-related questions today?
+2026-01-26T14:03:30.449804,h,Hello! How can I assist you with your university-related questions today?
+2026-01-26T14:03:31.137357,h,Hello! How can I assist you with your university-related questions today?
+2026-01-26T14:06:13.373061,administration,Hello! How can I assist you with your university-related questions?
+2026-01-26T14:06:30.160044,tell me about  🏫 Academic support services,"Future Tech University (FTU) provides academic advising and tutoring services to support students in their academic journey. Students can book appointments for these services through the Student Services Office. If you have any specific questions about academic support, feel free to ask!"
+2026-01-26T14:06:56.275717,name of the universit ?,The name of the university is Future Tech University (FTU). How can I assist you with university-related questions?
+2026-01-26T18:34:55.692686,Tell me about exams.,Each course includes at least one midterm exam and one final exam. The final exam usually represents 40% of the total course grade. Students must bring their university ID to all examinations.
+2026-01-26T18:35:11.128598,What percentage does the final exam represent in each course according to the university regulations?”,The final exam usually represents 40% of the total course grade.
+2026-01-26T19:19:54.483674,مرحبا,مرحبًا! كيف يمكنني مساعدتك في سؤال يتعلق بالجامعة؟
+2026-01-26T19:21:43.080479,حدثني عن نظام الجامعة,"مرحبًا! يمكنك طرح أي سؤال يتعلق بالجامعة، وسأكون سعيدًا بمساعدتك.
+
+Hello! You can ask any university-related question, and I will be happy to assist you."
+2026-01-26T19:22:02.791332,نظام الحضور,"يجب على الطلاب حضور ما لا يقل عن 75% من المحاضرات. إذا انخفضت نسبة الحضور عن هذا الحد، قد يُمنع الطالب من دخول الامتحان النهائي.
+
+Students must attend at least 75% of lectures. If a student’s attendance falls below this limit, the student may be denied entry to the final exam."
