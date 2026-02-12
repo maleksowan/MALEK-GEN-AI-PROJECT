@@ -3,113 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot Interface</title>
+    <title>Premium Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
         }
         .chat-container {
             width: 100%;
-            max-width: 800px;
-            margin: auto;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        .chat-header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .chat-messages {
-            padding: 10px;
-            height: 400px;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .message {
+            padding: 10px;
             margin: 5px 0;
-            padding: 8px;
-            border-radius: 4px;
+            border-radius: 8px;
+            position: relative;
         }
-        .user-message {
-            background-color: #e7f3fe;
-            text-align: right;
-        }
-        .bot-message {
-            background-color: #f1f1f1;
-        }
-        .loading {
-            display: none;
-            font-style: italic;
-            color: grey;
-        }
-        .input-container {
-            display: flex;
-            padding: 10px;
-            border-top: 1px solid #ddd;
-        }
-        .input-container input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .input-container button {
-            padding: 10px;
-            border: none;
-            background-color: #4CAF50;
+        .message.sent {
+            background-color: #0078d7;
             color: white;
-            border-radius: 4px;
-            cursor: pointer;
+            align-self: flex-end;
         }
-        .input-container button:hover {
-            background-color: #45a049;
+        .message.received {
+            background-color: #444;
+            color: white;
+            align-self: flex-start;
+        }
+        .timestamp {
+            font-size: 0.8em;
+            position: absolute;
+            bottom: -15px;
+            right: 10px;
+            color: #bbb;
+        }
+        /* Add responsive styles and animations */
+        @media (max-width: 600px) {
+            .chat-container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="chat-container">
-        <div class="chat-header">
-            <h2>Chatbot</h2>
+        <div class="messages">
+            <div class="message sent">
+                Hello!<span class="timestamp">2026-02-12 07:13:35</span>
+            </div>
+            <div class="message received">
+                Hi there!<span class="timestamp">2026-02-12 07:13:36</span>
+            </div>
         </div>
-        <div class="chat-messages" id="chatMessages">
-            <div class="loading" id="loading">Typing...</div>
-        </div>
-        <div class="input-container">
-            <input type="text" id="userInput" placeholder="Type your message here..." />
-            <button onclick="sendMessage()">Send</button>
-        </div>
+        <input type="text" placeholder="Type your message..." />
+        <button>Send</button>
     </div>
-    <script>
-        function sendMessage() {
-            const input = document.getElementById('userInput');
-            const message = input.value;
-            if (message.trim() === '') return;
-
-            // Add user message
-            const chatMessages = document.getElementById('chatMessages');
-            chatMessages.innerHTML += `<div class='message user-message'><strong>User:</strong> ${message} <span>${new Date().toLocaleTimeString()}</span></div>`;
-            input.value = '';
-
-            // Show loading indicator
-            const loading = document.getElementById('loading');
-            loading.style.display = 'block';
-
-            // Simulate bot response
-            setTimeout(() => {
-                loading.style.display = 'none';
-                const botResponse = 'This is a simulated response.'; // Replace with actual bot response
-                chatMessages.innerHTML += `<div class='message bot-message'><strong>Bot:</strong> ${botResponse} <span>${new Date().toLocaleTimeString()}</span></div>`;
-                chatMessages.scrollTop = chatMessages.scrollHeight; // Auto scroll to bottom
-            }, 1500);
-        }
-    </script>
 </body>
 </html>
